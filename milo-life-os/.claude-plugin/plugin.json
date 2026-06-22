@@ -1,0 +1,17 @@
+{
+  "name": "milo-life-os",
+  "version": "0.3.0",
+  "description": "MILO.LIFE.OS client plugin. Skills a client runs on their own installed system: the ABBI weekly review and planning coach, the page formatting enforcer, and the database and system maintenance steward. Built to extend with OS+ usage and system installation skills over time.",
+  "author": {
+    "name": "Sasa Milosevic"
+  },
+  "keywords": [
+    "milo",
+    "coaching",
+    "weekly-review",
+    "notion",
+    "formatting",
+    "maintenance",
+    "abbi"
+  ]
+}

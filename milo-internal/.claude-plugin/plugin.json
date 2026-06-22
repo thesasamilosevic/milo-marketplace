@@ -1,0 +1,15 @@
+{
+  "name": "milo-internal",
+  "version": "0.3.0",
+  "description": "MILO.LIFE.OS internal plugin. Saša's build-and-deliver tools: the client diagnostic analyst, the pipeline module builder, and the locked client document templates (Coaching Agreement, Leader Install Roadmap). Not for client distribution.",
+  "author": {
+    "name": "Sasa Milosevic"
+  },
+  "keywords": [
+    "milo",
+    "notion",
+    "diagnostic",
+    "system-installation",
+    "documents"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "milo-marketplace",
+  "owner": {
+    "name": "Sasa Milosevic"
+  },
+  "metadata": {
+    "description": "MILO.LIFE.OS plugins: the client system and the internal build-and-deliver tools.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "milo-life-os",
+      "source": "./milo-life-os",
+      "description": "Client plugin. Life Mentor weekly review, Page Formatter, and System Maintenance for a client's own MILO.LIFE.OS system."
+    },
+    {
+      "name": "milo-internal",
+      "source": "./milo-internal",
+      "description": "Internal plugin. Client Diagnostic, Module Builder, and Client Documents. Saša's build-and-deliver tools, not for client distribution."
+    }
+  ]
+}
