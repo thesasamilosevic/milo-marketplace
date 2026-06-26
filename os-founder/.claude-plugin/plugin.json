@@ -1,0 +1,16 @@
+{
+  "name": "os-founder",
+  "version": "0.1.0",
+  "description": "OS+ Founder plugin. Pre-Call Brief for discovery calls, Marketing Copy for ads and emails, and an AI-usage SWOT. Extends the OS+ Founder package for solo operators.",
+  "author": {
+    "name": "Sasa Milosevic"
+  },
+  "keywords": [
+    "founder",
+    "sales",
+    "marketing",
+    "discovery-call",
+    "copywriting",
+    "swot"
+  ]
+}

@@ -4,19 +4,49 @@
     "name": "Sasa Milosevic"
   },
   "metadata": {
-    "description": "MILO.LIFE.OS plugins: the client system and the internal build-and-deliver tools.",
-    "version": "1.0.0"
+    "description": "MILO plugins, package-aligned to the OS+ catalog: Content, AI, Founder, Vitality, Leadership, Core, and Finances, plus the internal build-and-deliver tools.",
+    "version": "2.0.0"
   },
   "plugins": [
     {
-      "name": "milo-life-os",
-      "source": "./milo-life-os",
-      "description": "Client plugin. Life Mentor weekly review, Page Formatter, and System Maintenance for a client's own MILO.LIFE.OS system."
+      "name": "os-content",
+      "source": "./os-content",
+      "description": "OS+ Content Creation plugin. Content Editor & Coach, Content Packaging, and Script Converter. First of the package-aligned os- plugins."
     },
     {
-      "name": "milo-internal",
-      "source": "./milo-internal",
-      "description": "Internal plugin. Client Diagnostic, Module Builder, and Client Documents. Saša's build-and-deliver tools, not for client distribution."
+      "name": "os-finances",
+      "source": "./os-finances",
+      "description": "OS+ Finances plugin. Shopping Strategist: rigorous, quality-first purchase research."
+    },
+    {
+      "name": "os-ai",
+      "source": "./os-ai",
+      "description": "OS+ AI plugin. Prompt Architect and Transcript Organizer."
+    },
+    {
+      "name": "os-founder",
+      "source": "./os-founder",
+      "description": "OS+ Founder plugin. Pre-Call Brief, Marketing Copy, and AI-Usage SWOT for solo operators."
+    },
+    {
+      "name": "os-vitality",
+      "source": "./os-vitality",
+      "description": "OS+ Vitality plugin. Music Librarian: Spotify-connected discovery and playlist cleanup."
+    },
+    {
+      "name": "os-leadership",
+      "source": "./os-leadership",
+      "description": "OS+ Leadership plugin. Meeting Summarizer and EA Task Creator."
+    },
+    {
+      "name": "os-core",
+      "source": "./os-core",
+      "description": "OS CORE plugin. Weekly Planning Run: Priority Star weekly priority pick."
+    },
+    {
+      "name": "os-internal",
+      "source": "./os-internal",
+      "description": "Internal plugin, not package-aligned. Client Diagnostic, Client Documents, Module Builder, Page Formatter, and System Maintenance. The build-and-deliver and OS-maintenance tools."
     }
   ]
 }

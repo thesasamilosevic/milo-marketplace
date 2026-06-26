@@ -1,0 +1,15 @@
+{
+  "name": "os-ai",
+  "version": "0.1.0",
+  "description": "OS+ AI plugin. Prompt Architect for building and scoring prompts, and Transcript Organizer for turning raw voice notes into structured thinking. Extends the OS+ AI package.",
+  "author": {
+    "name": "Sasa Milosevic"
+  },
+  "keywords": [
+    "ai",
+    "prompts",
+    "prompt-engineering",
+    "transcripts",
+    "voice-notes"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "os-finances",
+  "version": "0.1.0",
+  "description": "OS+ Finances plugin. Shopping Strategist: rigorous, quality-first purchase research with source-cited, structured recommendations. Extends the OS+ Finances package.",
+  "author": {
+    "name": "Sasa Milosevic"
+  },
+  "keywords": [
+    "finances",
+    "shopping",
+    "purchase",
+    "research",
+    "buying"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "os-vitality",
+  "version": "0.1.0",
+  "description": "OS+ Vitality plugin. Music Librarian: a discovery scout and catalog keeper that works through a connected Spotify account. Extends the OS+ Vitality package.",
+  "author": {
+    "name": "Sasa Milosevic"
+  },
+  "keywords": [
+    "vitality",
+    "music",
+    "spotify",
+    "discovery",
+    "playlists"
+  ]
+}

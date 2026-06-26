@@ -1,0 +1,16 @@
+{
+  "name": "os-content",
+  "version": "0.2.0",
+  "description": "OS+ Content Creation plugin. A content lab for any creator: an editor and coach for short and long-form content, content packaging (titles, thumbnail text, captions, hashtags, descriptions), and voice-memo to script conversion. Extends the OS+ Content Creation package.",
+  "author": {
+    "name": "Sasa Milosevic"
+  },
+  "keywords": [
+    "content",
+    "editing",
+    "captions",
+    "scripts",
+    "youtube",
+    "short-form"
+  ]
+}

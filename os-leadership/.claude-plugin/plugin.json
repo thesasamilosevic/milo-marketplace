@@ -1,0 +1,16 @@
+{
+  "name": "os-leadership",
+  "version": "0.1.0",
+  "description": "OS+ Leadership plugin. Meeting Summarizer that turns meeting transcripts into structured Notion log entries, and an Executive Assistant Task Creator that turns spoken instructions into precise checklists. Extends the OS+ Leadership package.",
+  "author": {
+    "name": "Sasa Milosevic"
+  },
+  "keywords": [
+    "leadership",
+    "meetings",
+    "summaries",
+    "granola",
+    "notion",
+    "delegation"
+  ]
+}
