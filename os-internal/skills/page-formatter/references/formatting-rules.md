@@ -85,6 +85,7 @@ Evaluate three factors when selecting heading levels:
 - Use default callouts only. Do not apply callout background colours unless explicitly requested
 - Do not colour or highlight callout headers
 - Callout header spacing standard: one space between every letter, two spaces between every word
+- In callout headers, use an ampersand (&) instead of the word AND. Example: `S E T U P   &   D E P L O Y M E N T`, never `S E T U P   A N D   D E P L O Y M E N T`
 - Inside the callout, use this order:
   1. Category title (header spacing standard)
   2. P R I M A R Y  Q U E S T I O N
@@ -172,3 +173,24 @@ Evaluate three factors when selecting heading levels:
 
 Always use the plain text `™` character, never the emoji. Use it in body text,
 headings, and callouts only. Do not include `™` in page titles.
+
+## Notion Icons
+
+Only use icon names confirmed to exist in Notion. An invented name renders as a blank black square. When unsure, reuse a name already seen rendering on an existing MILO page, or confirm against Notion's icon picker, where the tooltip shows the icon name.
+
+- Reference format: `icons/<name>_<colour>` in page and callout icon fields, or `https://www.notion.so/icons/<name>_<colour>.svg` when setting the API icon field
+- Names are case-insensitive, and spaces, hyphens, and underscores are equivalent
+- Confirmed names in frequent use: science, clipping, new-document, list, checkmark-square, folder, die1 through die6, rename, language, barricade, warning, calculator, link, map, search, table, font, flag-pennant, token, video-camera, code, library, compass, layers, location
+- Known miss: there is no `play` icon. Use `video-camera` for video or walkthrough sections
+- Full set lives in Notion's icon picker and the API reference at developers.notion.com/reference/emoji-and-icon
+
+## Setup and Deployment Page Structure
+
+The standard for any agent, setup, or deployment guide page. Every guide page in the AI Resources area follows it.
+
+- Page icon: a document icon in the page's colour, `new-document_<colour>`
+- First block: an atom intro callout, `science_<colour>` icon with the `<colour>_bg` background, holding one overview blockquote
+- Second block: exactly one empty block as a spacer
+- Third block: a single main callout that holds everything else. Its icon matches the page icon (`new-document_<colour>`), and its first line is an H2 spaced-caps bold title `## <span color="<colour>">**I N S T R U C T I O N S**</span>` followed by a divider
+- Inside that wrapper: each section is its own callout with a confirmed `<colour>` icon and a spaced-caps bold `<colour>` span title (no heading), followed by a divider. Numbered steps use `die1` through `die6`. Reference or appendix sections use a topical icon and may be collapsible toggles
+- One colour family runs through every icon and span, matching the page

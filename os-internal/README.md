@@ -7,7 +7,7 @@ Not package-aligned. The build-and-deliver and OS-maintenance tools, kept togeth
 | Skill | Command | What it does |
 | --- | --- | --- |
 | Client Diagnostic | `/os-internal:client-diagnostic` | Produces the 7-step diagnostic report from a client's intake form and pushes it to their Notion diagnostic page. |
-| Client Documents | `/os-internal:client-documents` | Builds the locked Coaching Agreement and Leader Install Roadmap deliverables to their approved templates. |
+| Client Documents | `/os-internal:client-documents` | Builds the locked Coaching Agreement, Leader Install Roadmap, and MILO.CUSTOM.OS Build Log deliverables to their approved templates. |
 | Module Builder | `/os-internal:module-builder` | Drafts and refines System Installation Pipeline modules with client-facing steps and VA execution notes. |
 | Page Formatter | `/os-internal:page-formatter` | Applies the MILO house style to a Notion page: heading architecture, callouts, bullets, colour rules. |
 | System Maintenance | `/os-internal:system-maintenance` | Audits and standardises MILO databases, writes descriptions, and safely edits Notion forms. |
