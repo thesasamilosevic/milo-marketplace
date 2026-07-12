@@ -4,8 +4,8 @@
     "name": "Sasa Milosevic"
   },
   "metadata": {
-    "description": "MILO plugins, package-aligned to the OS+ catalog: Content, AI, Founder, Vitality, Leadership, Core, and Finances, plus the internal build-and-deliver tools.",
-    "version": "2.1.0"
+    "description": "MILO plugins, package-aligned to the OS+ catalog: Content, AI, Founder, Vitality, Leadership, Core, and Finances. Internal build-and-deliver instructions live in the Notion ABBI Metadata Vault, not here.",
+    "version": "2.2.0"
   },
   "plugins": [
     {
@@ -42,11 +42,6 @@
       "name": "os-core",
       "source": "./os-core",
       "description": "OS CORE plugin. Weekly Planning Run: Priority Star weekly priority pick."
-    },
-    {
-      "name": "os-internal",
-      "source": "./os-internal",
-      "description": "Internal plugin, not package-aligned. Client Diagnostic, Client Documents, Module Builder, Page Formatter, and System Maintenance. The build-and-deliver and OS-maintenance tools."
     }
   ]
 }
