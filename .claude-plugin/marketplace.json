@@ -5,13 +5,13 @@
   },
   "metadata": {
     "description": "MILO plugins, package-aligned to the OS+ catalog: Content, AI, Founder, Vitality, Leadership, Core, and Finances. Internal build-and-deliver instructions live in the Notion ABBI Metadata Vault, not here.",
-    "version": "2.2.0"
+    "version": "2.3.0"
   },
   "plugins": [
     {
       "name": "os-content",
       "source": "./os-content",
-      "description": "OS+ Content Creation plugin. Content Editor & Coach, Content Packaging, and Script Converter. First of the package-aligned os- plugins."
+      "description": "OS+ Content Creation plugin. Content Editor & Coach, Caption & Title Writer, and Script Converter. First of the package-aligned os- plugins."
     },
     {
       "name": "os-finances",
@@ -26,7 +26,7 @@
     {
       "name": "os-founder",
       "source": "./os-founder",
-      "description": "OS+ Founder plugin. Pre-Call Brief, Marketing Copy, and AI-Usage SWOT for solo operators."
+      "description": "OS+ Founder plugin. Marketing Copy and AI-Usage SWOT for solo operators."
     },
     {
       "name": "os-vitality",
@@ -41,7 +41,7 @@
     {
       "name": "os-core",
       "source": "./os-core",
-      "description": "OS CORE plugin. Weekly Planning Run: Priority Star weekly priority pick."
+      "description": "OS CORE plugin. Life Mentor for weekly-review coaching, and Priority Star Process for the weekly ONE THING pick."
     }
   ]
 }

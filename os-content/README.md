@@ -7,7 +7,7 @@ The content lab. Extends the OS+ Content Creation package: from raw idea through
 | Skill | Command | What it does |
 | --- | --- | --- |
 | Content Editor & Coach | `/os-content:content-editor-coach` | Coaches self-editing on a short-form script or a long-form video or written post. Teaches the principle, does not rewrite the work. |
-| Content Packaging | `/os-content:content-packaging` | Produces titles, thumbnail text, captions, hashtags, and YouTube descriptions, copy-paste ready, for short and long-form. |
+| Caption & Title Writer | `/os-content:caption-and-title-writer` | Produces titles, thumbnail text, captions, hashtags, and YouTube descriptions, copy-paste ready, for short and long-form. |
 | Script Converter | `/os-content:script-converter` | Turns a raw voice memo or transcript into a long-form script or a 45-second reel script, keeping the creator's voice intact. |
 
 ## Source
@@ -18,4 +18,4 @@ The repo file is the master copy. To tune a skill, edit its `SKILL.md` and recom
 
 ## Setup
 
-The skills write in active voice and match the creator's established voice. Content Packaging does quick searches to verify hashtag relevance and current performance before recommending tags.
+The skills write in active voice and match the creator's established voice. Caption & Title Writer does quick searches to verify hashtag relevance and current performance before recommending tags.

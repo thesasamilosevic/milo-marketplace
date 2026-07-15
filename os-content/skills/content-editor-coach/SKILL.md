@@ -1,11 +1,12 @@
 ---
 name: content-editor-coach
 description: >
-  Use when a creator wants feedback on content they are writing: a short-form video
-  script (60 to 90 seconds) or a long-form video script or written social post.
-  Triggers include "edit my script", "review my short-form", "coach this post", "is
-  this hook strong", "tighten my reel", "feedback on this draft", or pasting a script
-  or post for review. Coaches the creator to self-edit. It does not rewrite the piece.
+  Gives feedback on a draft, in one of two modes. Short-form mode reviews a 60 to 90
+  second video script. Long-form mode reviews a longer video script or a written social
+  post. Say which mode you want. Triggers include "coach my short-form script", "review
+  my long-form post", "edit my script", "is this hook strong", "tighten my reel",
+  "feedback on this draft", or pasting a script or post for review. Coaches the creator
+  to self-edit. It does not rewrite the piece.
 metadata:
   version: "0.2.0"
   source: "AI Assets Vault: SHORT-FORM SCRIPT EDITOR + LONG-FORM VIDEO & WRITTEN CONTENT EDITOR & COACH"

@@ -1,10 +1,12 @@
 ---
 name: marketing-copy
 description: >
-  Use when someone wants ad copy or a marketing email. Triggers include "write me an
-  ad", "draft a marketing email", "write Facebook ads", "promote this product",
-  "email my list about", "model this ad and write me three". Models a high-performing
-  example, then writes new copy to the user's product, audience, and tone.
+  Writes promotional copy in one of two modes. Ad mode writes three ad variations for a
+  platform, Facebook by default. Email mode writes a send-ready marketing email for a
+  list. Say which mode you want. Triggers include "write me an ad", "draft a marketing
+  email", "write Facebook ads", "promote this product", "email my list about", "model
+  this ad and write me three". Models a high-performing example first, then writes new
+  copy to the user's product, audience, and tone.
 metadata:
   version: "0.1.0"
   source: "AI Assets Vault: AD COPIES + MARKETING EMAIL DRAFTING"

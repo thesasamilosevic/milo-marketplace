@@ -1,11 +1,12 @@
 ---
 name: script-converter
 description: >
-  Use when a creator has a raw voice memo, transcript, or brain dump and wants it
-  turned into a usable script. Triggers include "turn this ramble into a script",
-  "convert this voice memo", "make this into a reel script", "clean up this transcript
-  into a YouTube script", or pasting a raw transcript. Two modes: long-form essay or
-  script, and short-form 45-second reel.
+  Turns a raw voice memo, transcript, or brain dump into a script, in one of two modes.
+  Long-form mode writes an essay or YouTube script. Short-form mode writes a 45-second
+  reel script. Say which mode you want. Triggers include "turn this ramble into a
+  long-form script", "convert this voice memo", "make this into a short-form reel
+  script", "clean up this transcript into a YouTube script", or pasting a raw
+  transcript. Keeps the creator's own voice intact.
 metadata:
   version: "0.2.0"
   source: "AI Assets Vault: VOICE MEMO → CONTENT SCRIPT CONVERTER (LONG-FORM) + (SHORT-FORM)"

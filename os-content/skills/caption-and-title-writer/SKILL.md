@@ -1,17 +1,18 @@
 ---
-name: content-packaging
+name: caption-and-title-writer
 description: >
-  Use when a creator has a finished video or script and needs the publishing package:
-  titles, thumbnail text, captions, hashtags, and YouTube descriptions. Triggers
-  include "write captions for this", "give me titles", "package this video",
-  "thumbnail text", "YouTube description", "hashtags for this reel". Produces
-  copy-paste-ready output for short-form (Reels, TikTok, Shorts) and long-form (YouTube).
+  Writes the publishing copy for a finished video or script, in one of two modes.
+  Short-form mode writes Reels, TikTok, and Shorts captions plus hashtags. Long-form
+  mode writes YouTube titles, descriptions, and thumbnail text. Say which mode you want.
+  Triggers include "write short-form captions for this", "give me long-form YouTube
+  titles", "hashtags for this reel", "thumbnail text", "YouTube description". Output is
+  copy-paste ready.
 metadata:
   version: "0.2.0"
   source: "AI Assets Vault: TITLE, CAPTIONING & DESCRIPTION + SHORT FORM CAPTIONS"
 ---
 
-# CONTENT PACKAGING
+# CAPTION & TITLE WRITER
 
 ## Purpose
 
