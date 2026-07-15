@@ -1,67 +1,75 @@
 # MILO Marketplace
 
-A plugin marketplace for the MILO.LIFE.OS plugins. Hosting this as a git repo lets
-people add it once and pull updates whenever you publish, with no re-sending of files.
+Claude plugins for MILO, package-aligned to the OS+ catalog. Seven plugins, fourteen skills.
+
+Each plugin maps to a package a client can buy. Install the whole marketplace and the skills group themselves by package in Claude's `/` menu, so `os-content` skills sit together, `os-founder` skills sit together, and so on.
 
 ## What's inside
 
-| Plugin | For | Skills |
-| --- | --- | --- |
-| `milo-life-os` | Clients (their own system) | Life Mentor, Page Formatter, System Maintenance |
-| `milo-internal` | You only | Client Diagnostic, Module Builder, Client Documents |
+| Plugin | Skills |
+| --- | --- |
+| `os-core` | Life Mentor, Priority Star Process |
+| `os-content` | Script Converter, Content Editor & Coach, Caption & Title Writer, Shot List Director |
+| `os-ai` | Prompt Architect, Transcript Organizer |
+| `os-founder` | Marketing Copy, SWOT Analysis |
+| `os-leadership` | Meeting Summarizer, EA Task Creator |
+| `os-finances` | Shopping Strategist |
+| `os-vitality` | Music Librarian |
 
-The manifest is `.claude-plugin/marketplace.json`. Each plugin lives in its own
-folder in this repo, referenced by a relative `source` path.
+### What each one does
 
-## Private repo and access
+**os-core** is the spine. Life Mentor runs the reflective half of weekly planning, the coaching conversation when you feel stuck or off track. Priority Star Process runs the analytical half, a pairwise tournament that picks the week's ONE THING. They pair up.
 
-Host this as a private GitHub repo. Both plugins live in it, which is fine for your
-own use since you own the repo.
+**os-content** carries a video from idea to publish. Script Converter turns a voice memo into a script. Content Editor & Coach gives feedback on the draft without rewriting it. Shot List Director breaks the script into shots. Caption & Title Writer writes everything you publish around the video.
 
-There is no shareable secret link for a git-based marketplace. Access rides on GitHub
-permissions, not a public URL. So:
+**os-ai** sharpens how you work with AI. Prompt Architect builds and scores prompts. Transcript Organizer turns a brain dump into structured thinking.
 
-- For your own use, it just works. You are the owner, so `/plugin marketplace add`
-  uses your authenticated GitHub.
-- To give a specific person access without making the repo public, add them as a
-  collaborator on the repo (or issue a fine-grained access token or deploy key
-  scoped to it). Once they have read access, they add the marketplace the same way.
-- If you ever want clients to self-serve `milo-life-os` without repo access, that
-  is the case for a separate public marketplace listing only the client plugin. Say
-  the word and I will build that split.
+**os-founder**, **os-leadership**, **os-finances**, and **os-vitality** each carry the skills for their package: ad and email copy, meeting summaries and delegation checklists, purchase research, and music discovery.
 
-## Publish (one time)
+Four skills run two modes, long-form and short-form. Say which one you want when you invoke them. Their `/` descriptions spell it out.
 
-From this folder:
+## What is not inside
 
-```bash
-git init
-git add .
-git commit -m "MILO marketplace v1.0.0"
-git branch -M main
-git remote add origin https://github.com/<your-username>/milo-marketplace.git
-git push -u origin main
-```
+Instructions for building inside Notion do not live here. They live in the **ABBI Metadata Vault** in Notion, because that is the only place both readers can reach: Claude through the connector, and the Notion agent natively. Keeping a second copy here would mean maintaining the same rule twice and watching the copies drift.
 
-## How people add it and install
+The split: instructions for how to *think* live in this repo as skills. Instructions for how to *build in Notion* live in the vault.
+
+## Installing
+
+Two ways in. Pick one, not both.
+
+**From GitHub** (recommended). Add the marketplace once, then pull updates whenever a version ships:
 
 ```
-/plugin marketplace add <your-username>/milo-marketplace
-/plugin install milo-life-os@milo-marketplace
+thesasamilosevic/milo-marketplace
 ```
 
-You install the internal one the same way:
+Add it under Customize → Plugins → Browse → Add marketplace. Access rides on GitHub permissions, so a private repo needs the person added as a collaborator.
 
-```
-/plugin install milo-internal@milo-marketplace
-```
+**From a local folder.** Drag the folder onto the plugins screen. Claude reads it directly and never checks GitHub, so every change needs another drag. Useful while building a skill, awkward as a habit.
 
-## Publishing an update
+Running both at once is the trap: the local copy wins, GitHub goes stale, and nothing tells you they disagree.
 
-1. Edit the skill files in the plugin folder.
-2. Bump the plugin's `version` in its `.claude-plugin/plugin.json`, and the
-   marketplace `version` in `.claude-plugin/marketplace.json`.
+## Shipping an update
+
+1. Edit the skill files.
+2. Bump the plugin's `version` in its `.claude-plugin/plugin.json`, and the marketplace `version` in `.claude-plugin/marketplace.json`. **The version bump is what signals a new release.** Without it, nothing updates.
 3. Commit and push.
-4. Installed users refresh with `/plugin marketplace update`, then update the plugin.
+4. Refresh the marketplace in Claude, then restart.
 
-The version bump is what signals there is a new release.
+If you installed from a local folder instead, steps 3 and 4 do nothing. Drag the folder again.
+
+## Structure
+
+```
+.claude-plugin/marketplace.json     the manifest, lists every plugin
+os-<package>/
+  .claude-plugin/plugin.json        name, version, description, keywords
+  README.md                         what this plugin holds
+  skills/
+    <skill-name>/
+      SKILL.md                      frontmatter plus the instructions
+      references/                   optional, loaded on demand
+```
+
+A skill's `description` frontmatter is what Claude reads to decide whether to reach for it, and what you see in the `/` menu. It earns its length. Write it as the phrases someone would actually say.
