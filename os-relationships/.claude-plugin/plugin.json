@@ -1,0 +1,15 @@
+{
+  "name": "os-relationships",
+  "version": "0.1.0",
+  "description": "OS+ Relationships plugin. Contacts Triage: parses a phone contacts export, pre-sorts it for a fast review, and never decides who stays. Extends the OS+ Relationships package.",
+  "author": {
+    "name": "Sasa Milosevic"
+  },
+  "keywords": [
+    "relationships",
+    "contacts",
+    "triage",
+    "network",
+    "cleanup"
+  ]
+}
