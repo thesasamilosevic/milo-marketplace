@@ -1,7 +1,7 @@
 {
   "name": "os-ai",
-  "version": "0.1.0",
-  "description": "OS+ AI plugin. Prompt Architect for building and scoring prompts, and Transcript Organizer for turning raw voice notes into structured thinking. Extends the OS+ AI package.",
+  "version": "0.2.0",
+  "description": "OS+ AI plugin. Prompt Architect for building and scoring prompts, Transcript Organizer for turning raw voice notes into structured thinking, and Context Maintenance for capturing a chat's context before you end it and running a periodic sweep on memory, context, and rules. Extends the OS+ AI package.",
   "author": {
     "name": "Sasa Milosevic"
   },
@@ -10,6 +10,10 @@
     "prompts",
     "prompt-engineering",
     "transcripts",
-    "voice-notes"
+    "voice-notes",
+    "maintenance",
+    "memory",
+    "context",
+    "chat-archive"
   ]
 }
