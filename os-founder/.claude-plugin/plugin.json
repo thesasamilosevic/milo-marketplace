@@ -1,7 +1,7 @@
 {
   "name": "os-founder",
-  "version": "0.2.0",
-  "description": "OS+ Founder plugin. Marketing Copy for ads and emails, and an AI-usage SWOT. Extends the OS+ Founder package for solo operators.",
+  "version": "0.3.0",
+  "description": "OS+ Founder plugin. Marketing Copy for ads and emails, an AI-usage SWOT, and a SOT Analysis for reading where a market is heading. Extends the OS+ Founder package for solo operators.",
   "author": {
     "name": "Sasa Milosevic"
   },
@@ -10,6 +10,9 @@
     "sales",
     "marketing",
     "copywriting",
-    "swot"
+    "swot",
+    "sot",
+    "trends",
+    "strategy"
   ]
 }
