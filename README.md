@@ -11,7 +11,7 @@ Each plugin maps to a package a client can buy. Install the whole marketplace an
 | `os-core` | Life Mentor, Priority Star Process |
 | `os-content` | Script Converter, Content Editor & Coach, Caption & Title Writer, Shot List Director |
 | `os-ai` | Prompt Architect, Transcript Organizer |
-| `os-founder` | Marketing Copy, SWOT Analysis |
+| `os-founder` | Marketing Copy, SWOT Analysis, SOT Analysis |
 | `os-leadership` | Meeting Summarizer, EA Task Creator |
 | `os-finances` | Shopping Strategist |
 | `os-vitality` | Music Librarian |
