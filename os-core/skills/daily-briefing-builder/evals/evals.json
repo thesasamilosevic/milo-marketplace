@@ -1,0 +1,26 @@
+{
+  "skill_name": "daily-briefing-builder",
+  "evals": [
+    {
+      "id": 0,
+      "name": "rich-context-founder",
+      "prompt": "i want one of those morning ai briefing things. context: im Saša, i run MILO, we install internal systems for coaching + retreat businesses. no manager, no direct reports, i work with Vana (ops) and my brother Milo. clients that matter right now are Benn van Ryn and Luke Fenn, both mid-install. outside people who ALWAYS slip through: Govindh (my coach, emails me about vision sessions and i take 4 days to reply), and a guy named Marcus who runs a retreat centre in Costa Rica that i keep meaning to partner with. i live in notion + granola + gmail + google cal. i do not use slack or asana at all. mornings i open gmail first then granola to see what i said id do yesterday. the thing that kills me is i finish a client call, say ill send them a thing, and then it just evaporates. also retreat clients going quiet after i send a proposal - i want to know on day 3 not day 10. i do NOT want a news digest or fyi stuff, just what needs me. send it 6:45am, im in toronto.",
+      "expected_output": "A complete standalone briefing prompt with Granola/Notion/Gmail/Calendar scan steps only, no Slack or Asana steps, FYI section removed, Govindh and Marcus named explicitly in the email scan, a client-goes-quiet rule, and a scheduled task at 0 10 * * 1-5 (6:45am EDT = 10:45 UTC, so 45 10 * * 1-5). Should confirm delivery mechanism rather than assuming email send works.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "vague-opener",
+      "prompt": "hey. someone told me i should set this up but honestly i have no idea what im supposed to do here",
+      "expected_output": "Immediately explains what a briefing agent is in plain language, sets the ~10 min expectation, checks connectors before asking anything, then opens with questions informed by what it found rather than generic ones. Should not dump all six interview phases at once.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "recalibration-too-noisy",
+      "prompt": "my morning briefing has gotten useless. i built it about six weeks ago and now i just archive it without reading. its like 40 lines long every day and half of it is stuff i already know about. also i changed jobs internally - im running the partnerships team now instead of being on it, so i have 3 people reporting to me (Aisha, Tom, Priya) and i care way less about the day to day ticket stuff i used to track. here's what i currently have: [current prompt scans slack #partnerships #eng-support #general, gmail, asana project 'Partner Onboarding Q3', calendar, granola. surfaces all unread mentions, all asana tasks in the project, all meetings, plus an FYI section with company announcements.] what do i do",
+      "expected_output": "Recognizes this as recalibration, not a new build. Diagnoses noise vs misses. Asks the short set of tune-up questions. Produces an UPDATED prompt with a plain-language diff: cut #eng-support and #general, cut the FYI section, cut all-tasks-in-project in favour of blocked/overdue only, add the three direct reports as people to watch, reframe priority order around team management. Should not rerun a full interview.",
+      "files": []
+    }
+  ]
+}
