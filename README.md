@@ -44,7 +44,7 @@ Two ways in. Pick one, not both.
 thesasamilosevic/milo-marketplace
 ```
 
-Add it under Customize → Plugins → Browse → Add marketplace. Access rides on GitHub permissions, so a private repo needs the person added as a collaborator.
+Add it under Customize → Plugins → Browse → Add marketplace. The repo is public, so anyone can add it — no GitHub account or collaborator invite needed.
 
 **From a local folder.** Drag the folder onto the plugins screen. Claude reads it directly and never checks GitHub, so every change needs another drag. Useful while building a skill, awkward as a habit.
 

@@ -1,6 +1,6 @@
 {
   "name": "os-core",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "OS CORE plugin. Life Mentor weekly-review coaching, the Priority Star Process weekly pick, and the Daily Briefing Builder that interviews someone once and sets up their own recurring morning briefing. Extends the OS CORE package.",
   "author": {
     "name": "Sasa Milosevic"

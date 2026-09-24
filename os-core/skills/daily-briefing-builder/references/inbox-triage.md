@@ -43,6 +43,27 @@ That last row is the one people forget to ask about. Verification codes and one-
 
 When a message matches no rule, leave it alone and surface it. An agent that guesses at unmatched mail will be wrong in ways nobody can predict, and the person will stop trusting the whole system rather than the one bad guess.
 
+## The read-and-ignored sweep
+
+The rules above key off who sent a message. This one keys off what the person did with it, and it closes the gap those rules leave open. Mail that matches no sender rule sits in the inbox forever, even after the person has opened it, looked at it, and decided it needs nothing. The inbox fills with mail they have already dealt with in their head.
+
+**Inaction is a signal, so this is not the agent guessing.** That distinction is what keeps the sweep inside the rule against acting on unmatched mail. The agent is not deciding what the message means. The person opened it and chose to leave it bare, and the sweep reads that choice back. Every escape hatch stays in their hands: star it, label it, or leave it unread, and it stays.
+
+**The test, all four parts required:**
+
+| Condition | Why it is in the test |
+|---|---|
+| Read | They have seen it. Unread mail has never been triaged and must never be swept. |
+| Unstarred | Starring is the universal "keep this in front of me." |
+| Carries no label from the tier set | An explicit tag means they filed it as needing something. Name the actual labels in the prompt, never a generic "untagged." |
+| Older than 24 hours | Same-day mail is still live. The gap gives them a full working day to come back to it. |
+
+**Say the archive count, never the list.** One line in the filing summary, like "archived 9 read and untagged from Tuesday." A list of nine subject lines rebuilds the pile the sweep just cleared.
+
+**Run it in propose mode for the first week like any other rule.** It touches more mail than a sender rule does, because it catches everything the sender rules miss. A week of watching what it would have taken is what earns the switch to acting.
+
+Two limits worth stating plainly to the person, because the behaviour sounds native and is not. Their mail client cannot do this alone: filters fire when a message arrives and cannot act on elapsed time, so nothing happens until the agent's daily run comes around. And it is one write per message, which is fine at a day's volume and is exactly why the same approach does not scale to a backlog.
+
 ## Confirm the connector can actually write
 
 Do this before you design a single rule, and before you promise anyone their mail will be filed.
@@ -96,6 +117,18 @@ The tell is whether the person has ever thought about this category. Nobody has 
 
 Answers get written into the filing rules as ordinary rules, a one-line edit. Over a few months the rule set describes the inbox as it actually is rather than as it was the day you built it, and the person did nothing but answer a question every week or two.
 
+## Carry open items forward, and let them get louder
+
+A brief that only reports the last 24 hours has a hole in it. Anything the person did not action yesterday silently disappears, which is the exact failure the brief exists to prevent.
+
+Three instructions close it.
+
+**Find the real window rather than assuming one.** Have the agent search the person's sent mail for its own last brief and cover everything since, however long ago that was. Runs get missed, tasks get paused, people take holidays. A missed run must never create a gap. Print the window in the header so coverage is visible: "Since Tuesday evening" or "Covering 3 days, no brief since Monday."
+
+**Carry every unresolved item.** The agent reads its own last brief, takes each action, waiting and at-risk row, and works out whether it resolved: did they reply, did the thread move, did the task close. When it cannot tell, assume still open. Each surviving row reappears with a First seen date, so age is visible rather than inferred.
+
+**Escalate on age.** Once a row has appeared in roughly four briefs, move it to the at-risk section. An unactioned decision from a week ago is no longer a decision, it is something slipping, and the brief should say so rather than repeating it politely in the same place forever. This is what makes carrying worthwhile: the list gets louder as things age, which is the only thing that stops a recurring report becoming wallpaper.
+
 ## The backlog is a different job
 
 A person with years of unfiled mail will ask you to sort it. Push back on most of that.
@@ -107,3 +140,17 @@ A person with years of unfiled mail will ask you to sort it. Push back on most o
 **Archiving a backlog is cheap and transformative**, and worth explaining properly because it sounds destructive and is not. Archiving removes a message from the inbox view. It stays in All Mail and stays searchable forever. Once someone understands that, a decision that felt frightening becomes obvious.
 
 **Do not run a large backlog sweep through the agent.** Archiving is one write per message, so thousands of messages means thousands of calls, which is slow and can stop halfway and leave things in an unclear state. The mail client does the same job in one action. Hand the person the exact steps and let their client do it, then let the agent handle everything from that day forward. Knowing when not to be the tool is part of building a good one.
+
+## Capturing the backlog is not the same as archiving it
+
+The rule above governs archiving, which is thousands of writes and belongs in the mail client. Capturing runs the other way: read the recent backlog once, find what the person already owes, report it, write nothing. The cost objection does not apply to a read.
+
+This matters because a daily briefing only looks at the last 24 hours. On day one that makes it blind to every loop already hanging, which is exactly the pile the person hired it to catch. They read their first briefing, see four calm items, and quietly conclude the thing does not work.
+
+**Run a first-run capture when the person describes things already slipping.** Put it at the top of the briefing prompt, gated so it fires once:
+
+> **First run only.** Search the last 21 days for two things: threads where someone else sent the last message and the person never replied, and threads where the person sent the last message and got no answer in 7 days or more. List them under ALREADY SLIPPED, oldest first, capped at 20. State plainly that this section appears once and does not return. On every later run, skip this step entirely.
+
+**Cap it and keep the window short.** An uncapped first run returns a hundred lines and gets closed, which wastes the one morning the person is willing to read a long list. Twenty items prove the agent sees what they have been avoiding, and that is the whole job. Past roughly three weeks, most threads have either resolved themselves or stopped mattering, so a wider window buys noise rather than recall.
+
+**Say once that it will not repeat.** Without that line the person reasonably assumes every briefing runs this long, and a briefing that looks expensive to read on day one rarely gets opened on day three.

@@ -109,6 +109,7 @@ The rules that matter most while filling it in:
 - **Name their outside contacts explicitly.** Those follow-ups are the ones that slip, so they earn a named line in the scan steps rather than a general instruction to watch email.
 - **Drop any section they said they do not want.** If they said no FYI items, the FYI section leaves the template entirely.
 - **Make it standalone.** A scheduled task fires into a fresh session with no memory of this conversation. Every name, address, channel, and ID has to be written into the prompt itself.
+- **Add a first-run backlog capture when things are already slipping.** A briefing only looks at the last 24 hours, so on day one it cannot see a single loop that was already hanging. `references/inbox-triage.md` carries the block, the window, and the cap.
 
 ## Split acting from reading
 
