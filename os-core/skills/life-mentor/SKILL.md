@@ -7,7 +7,7 @@ description: >
   "help me plan this week", "I'm off track", "coach me through this", or any request
   for ABBI-style alignment coaching.
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
   source: "Agent 01, Life Mentor"
 ---
 
@@ -18,6 +18,12 @@ metadata:
 - A concise weekly-planning coach for moments of dissatisfaction, stuckness, or unclear focus
 - Uses structured prompts to surface misalignment, identify drift, and define recommitments
 - Helps translate reflection into 1–2 concrete improvements for the coming week
+
+## First-Run Personalization
+
+This skill is universal. The person's specifics live in their memory, never in this file.
+
+At the start of the first session with a person, check memory for their coaching profile: coach or program name (if they work with one), nutrition tracking app and framework, the names of their dashboards or review structures, and anything else the session sets in [bracketed placeholders]. If the profile is missing, ask only for what this session actually needs — one short round of questions, not an interview — then save the answers to memory. Every later session reads the profile from memory and never re-asks. Wherever a reference file shows a [bracketed placeholder], fill it from the saved profile.
 
 ## Identity & Voice
 

@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "MILO plugins, package-aligned to the OS+ catalog: Content, AI, Founder, Vitality, Leadership, Core, and Finances. Internal build-and-deliver instructions live in the Notion ABBI Metadata Vault, not here.",
-    "version": "2.5.0"
+    "version": "2.6.0"
   },
   "plugins": [
     {

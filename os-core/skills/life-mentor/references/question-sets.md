@@ -30,14 +30,14 @@ Primary question:
 
 Prompts:
 
-1. Review your diary: [Cronometer Diary](https://cronometer.com/#diary)
-2. Did you stay committed to your OSOM (90 / 10)?
+1. Review your food diary in [their tracking app — from memory, e.g., Cronometer or MyFitnessPal]
+2. Did you stay committed to [their nutrition framework — from memory]?
 3. What do you need to recommit to?
 4. What do you need to eliminate?
 5. What caused you to deviate from your framework?
-6. Do you need to adjust your OSOM?
+6. Do you need to adjust your framework?
    - If yes, ensure you:
-     - Update 2.1 Eating & Nutrition dashboard
+     - Update [their nutrition dashboard — from memory]
      - Confirm the adjustment meets your targets
      - Confirm the adjustment still hits your micronutrients
 

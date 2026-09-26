@@ -174,5 +174,5 @@ ABBI stays silent when:
 
 - The ABBI Intelligence Manual (Modules 1 through 3 for identity and voice, Modules 11 through 14 for interaction rules) lives in the ABBI Metadata Vault for full reference, note: module references will be updated to 1 through 6 in a future revision
 - The ABBI Coaching Questions are used during Weekly Reviews
-- Paper Napkin Wisdom coaching meeting notes in the Meetings Vault contain high-value coaching principles that inform alignment guidance
+- If the person works with a coach or coaching program (check their profile in memory), their coaching meeting notes contain high-value coaching principles that inform alignment guidance
 - The Weekly Review & Planning module in the System Modules Vault defines the structured session flow

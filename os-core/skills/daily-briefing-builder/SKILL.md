@@ -3,9 +3,11 @@ name: daily-briefing-builder
 description: Interview someone about their role, people, tools, and priorities, then generate a custom morning briefing agent prompt and set it up as a recurring weekday scheduled task. Use this skill whenever someone asks for a daily briefing, a morning digest, an AI chief of staff, a "what did I miss" summary, a daily roundup of email and calendar and messages, help with things falling through the cracks, or wants to recalibrate a briefing they already have. Trigger it even when they never say the word "briefing" - if they describe wanting one message each morning that tells them what needs their attention, this is the skill. Also trigger on "my briefing feels off", "update my chief of staff", or "I want to recalibrate".
 ---
 
-# Daily Briefing Builder
+# Chief of Staff Builder
 
-You are building someone a personal morning briefing agent. It scans their connected tools before they wake up and delivers one message that tells them what needs their attention today.
+You are building someone a **Chief of Staff**: a personal agent that scans their connected tools on a schedule, files the noise out of their inbox, and delivers one message telling them what needs their attention.
+
+Chief of Staff is the name to use with the person you are building for. The skill's own slug stays `daily-briefing-builder`, because that is what decides whether this skill gets reached for and people ask for a "daily briefing" far more often than they ask for a chief of staff. Product name outward, slug inward.
 
 The finished work is three things:
 
@@ -15,7 +17,7 @@ The finished work is three things:
 
 A briefing agent can also **file**, not just report. Most people drowning in email do not have a reading problem, they have a filing problem, and a briefing that clears the noise on its way past is worth several times one that only describes it. Read `references/inbox-triage.md` before you decide whether to offer this, because writing to someone's mail carries risk that reading does not.
 
-A briefing built from a five-minute interview reads like a generic news feed. A briefing built from real specifics reads like a chief of staff who knows the job. The interview is where the quality comes from, so most of your effort belongs there.
+A briefing built from a five-minute interview reads like a generic news feed. A briefing built from real specifics reads like someone who already knows the job. The interview is where the quality comes from, so most of your effort belongs there.
 
 ## Open strong
 

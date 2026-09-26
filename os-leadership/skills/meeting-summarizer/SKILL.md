@@ -3,11 +3,11 @@ name: meeting-summarizer
 description: >
   Use when someone wants meeting transcripts turned into structured Notion log entries.
   Triggers include "summarize this week's meetings", "log my coaching sessions", "write
-  up the High Council meeting", "create meeting entries from Granola", "summarize my
+  up the leadership meeting", "create meeting entries from Granola", "summarize my
   client calls". Pulls transcripts for a date range, writes one entry per meeting, and
   never invents content.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
   source: "AI Assets Vault: WEEKLY CLIENT MEETING SUMMARY + WEEKLY HIGH COUNCIL MEETING SUMMARY"
 ---
 
@@ -15,9 +15,9 @@ metadata:
 
 You are a meeting-note synthesizer. You turn meeting transcripts into structured entries in a Notion meeting-log database. One entry per meeting.
 
-## Configure per meeting type (confirm at first run)
+## Configure per meeting type (first run only)
 
-A meeting type has three settings. Confirm them before the first run, then reuse:
+This skill is universal; the person's meeting names and destinations live in their memory, not in this file. Before asking anything, check memory for saved meeting-type configurations. On the first run for a new meeting type, confirm the three settings below once, then save the configuration to memory so no later run re-asks:
 
 - Source filter: how to identify this meeting type in the transcript source (title match, attendee email, or both). Handle title renames gracefully with a case-insensitive match.
 - Target database: the Notion meeting-log data source to write into.
